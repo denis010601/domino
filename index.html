@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <title>ДОМИНО</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__menu">
+        <div class="logo header__logo">
+          <img src="img/header/Logo.png" alt="" class="logo-img header__logo-img">
+        </div>
+        <nav class="nav header__nav header__nav--margin-left">
+        <ul class="list header__list">
+          <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Главная</a></li>
+          <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Услуги</a></li>
+          <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Галерея</a></li>
+          <li class="menu-item header__menu-item"><a href="" class="header__menu-link">О компании</a></li>
+          <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Контакты</a></li>
+        </ul>
+        </nav>
+        <div class="contact  header__contact header__contact--margin-left">
+          <a href="" class="phone header__phone header__phone--margin-bottom"><div class="phone-box-img">
+            <img src="img/header/phone.svg" class="phone-img" alt=""></div>+7 (925) 432-75-90</a>
+          <span class="adress header__adress header__adress--margin-top">г.Москва, м.Бауманская, 
+            Ладожская 8</span>
+        </div>
+        <div class="header__social-box">
+          <a class="social header__social"><img src="img/instagram.svg" alt="" class="mobile-disabled  social-img"></a>
+          <a class="social header__social"><img src="img/instagram.svg" alt="" class="mobile-disabled  social-img"></a>
+          <button class="button header__button mobile-disabled button--primary">Записаться</button>
+          <button id="show" class="bm button header__button button--primary" >МЕНЮ</button> 
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="slider">
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide stock-1">
+                <div class="container">  
+                  <h2 class="title slide__title">«СЧАСТЛИВЫЕ ЧАСЫ»</h2>
+                  <p class="subtitle slide__subtitle">Только с 1 по 31 августа 2020 года 
+                    в «СМ-Косметология» действует выгода 15% 
+                    на ряд услуг с понедельника по четверг с 09:00 до 13:00.</p>
+                  <button class="button slide__button button--primary">Оставить заявку</button>
+                </div>    
+              </div>
+              <div class="swiper-slide stock-1">
+                <div class="container">  
+                  <h2 class="title slide__title">«СЧАСТЛИВЫЕ ЧАСЫ»</h2>
+                  <p class="subtitle slide__subtitle">Только с 1 по 31 августа 2020 года 
+                    в «СМ-Косметология» действует выгода 15% 
+                    на ряд услуг с понедельника по четверг с 09:00 до 13:00.</p>
+                  <button class="button slide__button button--primary">Оставить заявку</button>
+                </div>    
+              </div>
+              <div class="swiper-slide stock-1">
+                <div class="container">  
+                  <h2 class="title slide__title">«СЧАСТЛИВЫЕ ЧАСЫ»</h2>
+                  <p class="subtitle slide__subtitle">Только с 1 по 31 августа 2020 года 
+                    в «СМ-Косметология» действует выгода 15% 
+                    на ряд услуг с понедельника по четверг с 09:00 до 13:00.</p>
+                  <button class="button slide__button button--primary">Оставить заявку</button>
+                </div>    
+              </div>
+              
+              
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+      
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      
+
+      </div>
+      </div>
+    </section>
+    <section class="services">
+      <h2 class="title services__title">Услуги</h2>
+      <ul class="services__list">
+        <li class="services__item">
+          <img src="img/services/services-img-nails.jpg" alt="" class="servicrs__item-img">
+          <div class="services__interaction">
+            <span class="services__name services__name--visible">Ногтевой сервис</span>
+            <button class="button services__button button--interest services__button--visible">Подробнее</button>
+            <button class="button services__button button--primary">Записаться</button>
+          </div>
+          <div class="services__preview services__preview--visible">
+            <h3 class="services__preview-title">Ногтевой сервис</h3>
+          <ul class="services__preview-wrapper">
+            <li class="services__preview-column">
+              <ul class="services__preview-list">
+              <h4 class="services__preview-subtitle">Маникюр</h4>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Классический</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              
+              <li class="services__preview-item">
+                <span class="services__preview-view">Комбинированный</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Маникюр</span>
+                <span class="services__price">700 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Ремонт ногтя</span>
+                <span class="services__price">150 руб.</span>
+              </li>
+              
+              </ul>
+            </li>
+            <li class="services__preview-column">
+              <ul class="services__preview-list">
+              <h4 class="services__preview-subtitle">Педикюр</h4>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Классический</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              
+              <li class="services__preview-item">
+                <span class="services__preview-view">Комбинированный</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Маникюр</span>
+                <span class="services__price">700 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Ремонт ногтя</span>
+                <span class="services__price">150 руб.</span>
+              </li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+        </li>
+        <li class="services__item">
+          <img src="img/services/services-img-wighall.jpg" alt="" class="servicrs__item-img">
+          <div class="services__interaction">
+            <span class="services__name services__name--visible">Парикмахерский зал</span>
+            <button class="button services__button button--interest services__button--visible">Подробнее</button>
+            <button class="button services__button button--primary">Записаться</button>
+          </div>
+          <div class="services__preview services__preview--visible">
+            <h3 class="services__preview-title">Парикмахерский зал</h3>
+          <ul class="services__preview-wrapper">
+            <li class="services__preview-column">
+              <ul class="services__preview-list">
+              <h4 class="services__preview-subtitle">Маникюр</h4>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Классический</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              
+              <li class="services__preview-item">
+                <span class="services__preview-view">Комбинированный</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Маникюр</span>
+                <span class="services__price">700 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Ремонт ногтя</span>
+                <span class="services__price">150 руб.</span>
+              </li>
+              
+              </ul>
+            </li>
+            <li class="services__preview-column">
+              <ul class="services__preview-list">
+              <h4 class="services__preview-subtitle">Педикюр</h4>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Классический</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              
+              <li class="services__preview-item">
+                <span class="services__preview-view">Комбинированный</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Маникюр</span>
+                <span class="services__price">700 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Ремонт ногтя</span>
+                <span class="services__price">150 руб.</span>
+              </li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+        </li>
+        <li class="services__item">
+          <img src="img/services/services-img-mantrim.jpg" alt="" class="servicrs__item-img">
+          <div class="services__interaction">
+            <span class="services__name services__name--visible">Мужские стрижки</span>
+            <button class="button services__button button--interest services__button--visible">Подробнее</button>
+            <button class="button services__button button--primary">Записаться</button>
+          </div>
+          <div class="services__preview services__preview--visible">
+            <h3 class="services__preview-title">Мужские стрижки</h3>
+          <ul class="services__preview-wrapper">
+            <li class="services__preview-column">
+              <ul class="services__preview-list">
+              <h4 class="services__preview-subtitle">Маникюр</h4>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Классический</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              
+              <li class="services__preview-item">
+                <span class="services__preview-view">Комбинированный</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Маникюр</span>
+                <span class="services__price">700 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Ремонт ногтя</span>
+                <span class="services__price">150 руб.</span>
+              </li>
+              
+              </ul>
+            </li>
+            <li class="services__preview-column">
+              <ul class="services__preview-list">
+              <h4 class="services__preview-subtitle">Педикюр</h4>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Классический</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              
+              <li class="services__preview-item">
+                <span class="services__preview-view">Комбинированный</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Маникюр</span>
+                <span class="services__price">700 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Ремонт ногтя</span>
+                <span class="services__price">150 руб.</span>
+              </li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+        </li>
+        <li class="services__item">
+          <img src="img/services/services-img-makeup.jpg" alt="" class="servicrs__item-img">
+          <div class="services__interaction">
+            <span class="services__name services__name--visible">Макияж</span>
+            <button class="button services__button button--interest services__button--visible">Подробнее</button>
+            <button class="button services__button button--primary">Записаться</button>
+          </div>
+          <div class="services__preview services__preview--visible">
+            <h3 class="services__preview-title">Макияж</h3>
+          <ul class="services__preview-wrapper">
+            <li class="services__preview-column">
+              <ul class="services__preview-list">
+              <h4 class="services__preview-subtitle">Маникюр</h4>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Классический</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              
+              <li class="services__preview-item">
+                <span class="services__preview-view">Комбинированный</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Маникюр</span>
+                <span class="services__price">700 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Ремонт ногтя</span>
+                <span class="services__price">150 руб.</span>
+              </li>
+              
+              </ul>
+            </li>
+            <li class="services__preview-column">
+              <ul class="services__preview-list">
+              <h4 class="services__preview-subtitle">Педикюр</h4>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Классический</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              
+              <li class="services__preview-item">
+                <span class="services__preview-view">Комбинированный</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Маникюр</span>
+                <span class="services__price">700 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Ремонт ногтя</span>
+                <span class="services__price">150 руб.</span>
+              </li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+        </li>
+        <li class="services__item">
+          <img src="img/services/services-img-procedures.jpg" alt="" class="servicrs__item-img">
+          <div class="services__interaction">
+            <span class="services__name services__name--visible">СПА процедуры</span>
+            <button class="button services__button button--interest services__button--visible">Подробнее</button>
+            <button class="button services__button button--primary">Записаться</button>
+          </div>
+          <div class="services__preview services__preview--visible">
+            <h3 class="services__preview-title">СПА процедуры</h3>
+          <ul class="services__preview-wrapper">
+            <li class="services__preview-column">
+              <ul class="services__preview-list">
+              <h4 class="services__preview-subtitle">Маникюр</h4>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Классический</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              
+              <li class="services__preview-item">
+                <span class="services__preview-view">Комбинированный</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Маникюр</span>
+                <span class="services__price">700 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Ремонт ногтя</span>
+                <span class="services__price">150 руб.</span>
+              </li>
+              
+              </ul>
+            </li>
+            <li class="services__preview-column">
+              <ul class="services__preview-list">
+              <h4 class="services__preview-subtitle">Педикюр</h4>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Классический</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              
+              <li class="services__preview-item">
+                <span class="services__preview-view">Комбинированный</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Маникюр</span>
+                <span class="services__price">700 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Ремонт ногтя</span>
+                <span class="services__price">150 руб.</span>
+              </li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+        </li>
+        <li class="services__item">
+          <img src="img/services/services-img-solarium.jpg" alt="" class="servicrs__item-img">
+          <div class="services__interaction">
+            <span class="services__name services__name--visible">Солярий</span>
+            <button class="button services__button button--interest services__button--visible">Подробнее</button>
+            <button class="button services__button button--primary">Записаться</button>
+          </div>
+          <div class="services__preview services__preview--visible">
+            <h3 class="services__preview-title">Солярий</h3>
+          <ul class="services__preview-wrapper">
+            <li class="services__preview-column">
+              <ul class="services__preview-list">
+              <h4 class="services__preview-subtitle">Маникюр</h4>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Классический</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              
+              <li class="services__preview-item">
+                <span class="services__preview-view">Комбинированный</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Маникюр</span>
+                <span class="services__price">700 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Ремонт ногтя</span>
+                <span class="services__price">150 руб.</span>
+              </li>
+              
+              </ul>
+            </li>
+            <li class="services__preview-column">
+              <ul class="services__preview-list">
+              <h4 class="services__preview-subtitle">Педикюр</h4>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Классический</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              
+              <li class="services__preview-item">
+                <span class="services__preview-view">Комбинированный</span>
+                <span class="services__price">600 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Маникюр</span>
+                <span class="services__price">700 руб.</span>
+              </li>
+              <li class="services__preview-item">
+                <span class="services__preview-view">Ремонт ногтя</span>
+                <span class="services__price">150 руб.</span>
+              </li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="row about__row">
+          <div class="col col-60">
+            <h2 class="title about__title">О компании</h2>
+            <p class="about__text">Город Красоты – это стиль, мастерство, демократичные цены.
+              Мы хотели сделать невозможное, предоставить качественный сервис 
+              каждому. Чтобы любой человек, вне зависимости от своего достатка, 
+              возраста, вкусовых пристрастей, смог получить качественную услугу. 
+              И стать ещё немного счастливей.
+              <br>
+              <br>
+              И мы это сделали.
+              <br>
+              <br>
+              Сегодня Город Красоты — это 33 салона красоты с модными 
+              интеръерами и своей неповторимой атмосферой. </p>
+            <p class="about__text">Город Красоты – это стиль, мастерство, демократичные цены.
+              Мы хотели сделать невозможное, предоставить качественный сервис 
+              каждому. Чтобы любой человек, вне зависимости от своего достатка, 
+              возраста, вкусовых пристрастей, смог получить качественную услугу. </p>
+          </div>
+          <div class="col col-40">
+            <div class="about__box-img"><img src="img/about/about-img.jpg" alt="" class="about__img"></div>
+          </div>  
+        </div>
+      </div>
+    </section>
+    <section class="bid">
+      <div class="container">
+      <h2 class="title bid__title">Оставьте заявку</h2>
+      <p class="subtitle bid__subtitle">Наш администратор перезвонит вам через несколько 
+        минут</p>
+        <form action="#" class="form bid__form">
+          <input class="bid__input" type="text" placeholder="Ваше имя">
+          <input class="bid__input" type="text" placeholder="Ваш номер телефона">
+          <button class="form__button">Оставьте заявку</button>
+        </form>
+        <p class="consent">Нажимая на кнопку вы даете согласие на обработку персональных данных</p>
+      </div>
+      </section>
+      <section class="gallery">
+        <h2 class="title gallery__title">Галерея</h2>
+        <p class="subtitle gallery__subtitle">Оцените работы наших профессиональных
+          мастеров</p>
+          <div class="gallery__slider">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/gallery/g-1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/gallery/g-2.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="img/gallery/g-3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/gallery/g-4.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="img/gallery/g-5.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="img/gallery/g-6.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/gallery/g-7.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="img/gallery/g-8.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="img/gallery/g-9.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="img/gallery/g-10.jpeg" alt=""></div>
+              </div>
+              <!-- Add Scrollbar -->
+              <div class="swiper-scrollbar"></div>
+              <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+            </div>
+          </div>
+      </section>
+      <section class="advantage">
+        <div class="container">
+          <div class="row about__row">
+            <div class="col col-60">
+              <h2 class="title advantage__title">Наши преимущества</h2>
+              <p class="advantage__text">Салон Домино – это клуб с индивидуальными залами для каждого 
+                гостя. В котором вы получите премиальное профессиональное 
+                обслуживание включая все виды парикмахерских услуг, посетите 
+                зону спа и косметологии, визажиста и бровиста массажа, маникюра 
+                и педикюра. В клубе free bar.</p>
+                
+              <p class="advantage__text">Элементы английского интерьера идеально сочетаются с 
+                инновационным оснащением каждого кабинета. В каждом из которых 
+                работают профессионалы высочайшего уровня.</p>
+                
+              <p class="advantage__text">Салон приглашает всех кто неравнодушен к себе и сервису 
+                в лучших европейских традициях. Разделите с нами ценности 
+                и привычки истинных леди и джентльменов.</p>
+                
+              <p class="advantage__text">Салон Домино – это клуб с индивидуальными залами для каждого 
+                гостя. В котором вы получите премиальное профессиональное 
+                обслуживание включая все виды парикмахерских услуг, посетите 
+                зону спа и косметологии, визажиста и бровиста массажа, маникюра 
+                и педикюра. В клубе free bar.</p>
+              </p>
+            </div>
+            <div class="col col-31 advantage__col">
+              <ul class="advantage__list">
+                <li class="advantage__item">
+                  <img src="img/advantage/advantage-1.svg" alt="" class="advantage__item-img">
+                  <h3 class="advantage__item-title">100% 
+                    стерильность</h3>
+                  <p class="advantage__item-description">Все пилки для маникюра 
+                    и педикюра одноразовые</p>
+                </li>
+                <li class="advantage__item">
+                  <img src="img/advantage/advantage-2.svg" alt="" class="advantage__item-img">
+                  <h3 class="advantage__item-title">Индивидуальный
+                    подход</h3>
+                  <p class="advantage__item-description">Все пилки для маникюра 
+                    и педикюра одноразовые</p>
+                </li>
+                <li class="advantage__item">
+                  <img src="img/advantage/advantage-3.svg" alt="" class="advantage__item-img">
+                  <h3 class="advantage__item-title">Нейл-стилисты 
+                    опыт от 5 лет</h3>
+                  <p class="advantage__item-description">Все пилки для маникюра 
+                    и педикюра одноразовые</p>
+                </li>
+                <li class="advantage__item">
+                  <img src="img/advantage/advantage-4.svg" alt="" class="advantage__item-img">
+                  <h3 class="advantage__item-title">Большой<br>
+                    выбор</h3>
+                  <p class="advantage__item-description">Более 1000 оттенков Uno,
+                    Opi,Luxio Beautix, neo nail </p>
+                </li>
+              </ul>
+              <div class="advantage__social">
+                <img class="advantage__social-img" src="img/instagram.svg" alt="">
+                <p class="advantage__social-description">Присоединяйтесь 
+                  к нам в Instagram</p>
+                  <button class="advantage__social-button">Подписаться</button>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </section>
+      <section class="comment">
+        
+          <h2 class="title comment__title">Отзывы</h2>
+          <p class="subtitle comment__subtitle">Отзывы о нашей работе от наших клиентов</p>
+          <div class="comment__slider">
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="container">
+                    <div class="comment__people">
+                    <div class="comment__box-img">
+                      <img src="img/comment/img-1.jpg" alt="" class="comment-img">
+                    </div>
+                    <p class="comment__description">
+                      Салон Домино – это клуб с индивидуальными залами для каждого гостя. В котором вы 
+                      получите премиальное профессиональное обслуживание включая все виды парикмахерских 
+                      услуг, посетите зону спа и косметологии, визажиста и бровиста массажа, маникюра 
+                      и педикюра. В клубе free bar.
+                      Элементы английского интерьера идеально сочетаются с инновационным оснащением 
+                      каждого кабинета. В каждом из которых работают профессионалы высочайшего уровня.
+                    </p>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="container">
+                    <div class="comment__people">
+                    <div class="comment__box-img">
+                      <img src="img/comment/img-1.jpg" alt="" class="comment-img">
+                    </div>
+                    <p class="comment__description">
+                      Салон Домино – это клуб с индивидуальными залами для каждого гостя. В котором вы 
+                      получите премиальное профессиональное обслуживание включая все виды парикмахерских 
+                      услуг, посетите зону спа и косметологии, визажиста и бровиста массажа, маникюра 
+                      и педикюра. В клубе free bar.
+                      Элементы английского интерьера идеально сочетаются с инновационным оснащением 
+                      каждого кабинета. В каждом из которых работают профессионалы высочайшего уровня.
+                    </p>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="container">
+                    <div class="comment__people">
+                    <div class="comment__box-img">
+                      <img src="img/comment/img-1.jpg" alt="" class="comment-img">
+                    </div>
+                    <p class="comment__description">
+                      Салон Домино – это клуб с индивидуальными залами для каждого гостя. В котором вы 
+                      получите премиальное профессиональное обслуживание включая все виды парикмахерских 
+                      услуг, посетите зону спа и косметологии, визажиста и бровиста массажа, маникюра 
+                      и педикюра. В клубе free bar.
+                      Элементы английского интерьера идеально сочетаются с инновационным оснащением 
+                      каждого кабинета. В каждом из которых работают профессионалы высочайшего уровня.
+                    </p>
+                  </div>
+                  </div>
+                  </div>
+                  
+
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+          
+    
+          </div>
+          </div>
+        
+      </section>
+      <section class="contact">
+          <h2 class="title contact__title">Контакты</h2>
+          <div class="ymap-container">
+          <div class="loader loader-default"></div>
+          <div id="map-yandex" ></div>
+          <!-- .ymap-container -->
+          <div class="map-info">
+            <h3 class="title map__title">
+              Контакты студии красоты домино
+            </h3>
+            <a href="" class="phone map__phone ">
+              <img src="img/header/phone.svg" class="map-img" alt="">+7 (925) 432-75-90
+            </a>
+            <p class="map__adress">
+              <img src="img/map-ico.svg" class="map-img" alt="">г.Москва, м.Бауманская, Ладожская 8
+            </p>
+            <button class="button header__button button--primary">Записаться</button>
+            </div>
+          </div>
+      </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+    <div class="header__menu">
+      <div class="logo header__logo">
+        <img src="img/header/Logo.png" alt="" class="logo-img header__logo-img">
+      </div>
+      <nav class="nav header__nav header__nav--margin-left">
+      <ul class="list header__list">
+        <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Главная</a></li>
+        <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Услуги</a></li>
+        <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Галерея</a></li>
+        <li class="menu-item header__menu-item"><a href="" class="header__menu-link">О компании</a></li>
+        <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Контакты</a></li>
+      </ul>
+      </nav>
+      <div class="contact  header__contact header__contact--margin-left">
+        <a href="" class="phone header__phone header__phone--margin-bottom"><div class="phone-box-img">
+          <img src="img/header/phone.svg" class="phone-img" alt=""></div>+7 (925) 432-75-90</a>
+        <span class="adress header__adress header__adress--margin-top">г.Москва, м.Бауманская, 
+          Ладожская 8</span>
+      </div>
+      <div class="header__social-box">
+        <a class="social header__social"><img src="img/instagram.svg" alt="" class="mobile-disabled  social-img"></a>
+        <a class="social header__social"><img src="img/instagram.svg" alt="" class="mobile-disabled  social-img"></a>
+        <button class="button header__button button--primary">Записаться</button> 
+      </div>
+    </div>
+    </div>
+  </footer>
+  <div class="popup popup-nails">
+    <div class="popup__container">
+      <h2 class="title popup__title">Маникюр</h2>
+      <ul class="popup__list">
+          <li class="popup__item">
+            <h3 class="popup__item-title">Маникюр</h3>
+            <ul class="popup__service">
+              <li class="popup__next">
+                <span class="name-service popup__text">Классический</span>
+                <span class="price-service popup__text">600 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Необрезной</span>
+                <span class="price-service popup__text">400 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Комбинированный</span>
+                <span class="price-service popup__text">700 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Мужской</span>
+                <span class="price-service popup__text">800 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Ремонт 1-го ногтя шёлк</span>
+                <span class="price-service popup__text">150 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Ремонт 1-го ногтя акрил</span>
+                <span class="price-service popup__text">150 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Покрытие лаком</span>
+                <span class="price-service popup__text">200 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Покрытие лаком френич</span>
+                <span class="price-service popup__text">200 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Покрытие шеллак</span>
+                <span class="price-service popup__text">1000 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Покрытие шеллак френч</span>
+                <span class="price-service popup__text">1200 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Покрытие шеллак лунный</span>
+                <span class="price-service popup__text">1300 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Лечение ногтей</span>
+                <span class="price-service popup__text">500 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Дизайн краской</span>
+                <span class="price-service popup__text">От 50 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Дизайн слайд</span>
+                <span class="price-service popup__text">От 30 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Стразы шт.</span>
+                <span class="price-service popup__text">20 руб.</span>
+              </li>
+            </ul>
+          </li>
+          <li class="popup__item">
+            <h3 class="popup__item-title">Педикюр</h3>
+            <ul class="popup__service">
+              <li class="popup__next">
+                <span class="name-service popup__text">Классический</span>
+                <span class="price-service popup__text">1400 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Классический муж</span>
+                <span class="price-service popup__text">1600 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Комбинированный</span>
+                <span class="price-service popup__text">1100 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Удаление вросшего ногтя</span>
+                <span class="price-service popup__text">100 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Массаж ног</span>
+                <span class="price-service popup__text">200 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Доп.услуги</span>
+                <span class="price-service popup__text">300 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Удаление натоплтышей</span>
+                <span class="price-service popup__text">200 рубю</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Педикюр с покрытием шеллак</span>
+                <span class="price-service popup__text">2000 руб.</span>
+              </li>
+            </ul>
+          </li>
+          <li class="popup__item">
+            <h3 class="popup__item-title">Наращивание ногетей, гель, акрил</h3>
+            <ul class="popup__service">
+              <li class="popup__next">
+                <span class="name-service popup__text">Классический под лак (маникюр, дизайн)</span>
+                <span class="price-service popup__text">2500 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Френч (маникюр)</span>
+                <span class="price-service popup__text">2900 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Наращивание на формы (маникюр, дизайн)</span>
+                <span class="price-service popup__text">От 3000 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Укрепление ногтей гель</span>
+                <span class="price-service popup__text">1000 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Укрепление ногтей френч</span>
+                <span class="price-service popup__text">1500 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Укрепление ногтей акрил</span>
+                <span class="price-service popup__text">500 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Коррекция классическая (маникюр)</span>
+                <span class="price-service popup__text">1500 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Коррекция френч (маникюр)</span>
+                <span class="price-service popup__text">2000 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Снятие искусственных ногтей.</span>
+                <span class="price-service popup__text">500 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Снятие шеллак/гель-лак</span>
+                <span class="price-service popup__text">300 руб.</span>
+              </li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+  </div>
+  <div id="nav" class="navigation">
+    <div class="navigation__inner">
+      <ul class="menu__ul">
+        <li class="menu__link"><a href="#" class="menu__href">Главная</a></li>
+        <li class="menu__link"><a href="#" class="menu__href">Услуги</a></li>
+        <li class="menu__link"><a href="#"  class="menu__href">Галерея</a></li>
+        <li class="menu__link"><a href="#"  class="menu__href">О компании</a></li>
+        <li class="menu__link"><a href="#"  class="menu__href">Контакты</a></li>
+      </ul>
+      <button class="button button--silver btnburger">Закрыть</button>
+
+
+    </div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/jq.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
