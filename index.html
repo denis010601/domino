@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="scss/style.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <title>ДОМИНО</title>
 </head>
@@ -11,9 +11,9 @@
   <header class="header">
     <div class="container">
       <div class="header__menu">
-        <div class="logo header__logo">
+        <a href="#" class="logo header__logo">
           <img src="img/header/Logo.png" alt="" class="logo-img header__logo-img">
-        </div>
+        </a>
         <nav class="nav header__nav header__nav--margin-left">
         <ul class="list header__list">
           <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Главная</a></li>
@@ -23,7 +23,7 @@
           <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Контакты</a></li>
         </ul>
         </nav>
-        <div class="contact  header__contact header__contact--margin-left">
+        <div class="header__contact header__contact--margin-left">
           <a href="" class="phone header__phone header__phone--margin-bottom"><div class="phone-box-img">
             <img src="img/header/phone.svg" class="phone-img" alt=""></div>+7 (925) 432-75-90</a>
           <span class="adress header__adress header__adress--margin-top">г.Москва, м.Бауманская, 
@@ -93,7 +93,7 @@
           <img src="img/services/services-img-nails.jpg" alt="" class="servicrs__item-img">
           <div class="services__interaction">
             <span class="services__name services__name--visible">Ногтевой сервис</span>
-            <button class="button services__button button--interest services__button--visible">Подробнее</button>
+            <button class="button services__button button--interest services__button--visible bNails">Подробнее</button>
             <button class="button services__button button--primary">Записаться</button>
           </div>
           <div class="services__preview services__preview--visible">
@@ -151,7 +151,7 @@
           <img src="img/services/services-img-wighall.jpg" alt="" class="servicrs__item-img">
           <div class="services__interaction">
             <span class="services__name services__name--visible">Парикмахерский зал</span>
-            <button class="button services__button button--interest services__button--visible">Подробнее</button>
+            <button class="button services__button button--interest services__button--visible bWig">Подробнее</button>
             <button class="button services__button button--primary">Записаться</button>
           </div>
           <div class="services__preview services__preview--visible">
@@ -668,9 +668,9 @@
   <footer class="footer">
     <div class="container">
     <div class="header__menu">
-      <div class="logo header__logo">
+      <a href="#" class="logo header__logo">
         <img src="img/header/Logo.png" alt="" class="logo-img header__logo-img">
-      </div>
+      </a>
       <nav class="nav header__nav header__nav--margin-left">
       <ul class="list header__list">
         <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Главная</a></li>
@@ -696,6 +696,162 @@
   </footer>
   <div class="popup popup-nails">
     <div class="popup__container">
+      <button class="popup-close"></button>
+      <h2 class="title popup__title">Маникюр</h2>
+      <ul class="popup__list">
+          <li class="popup__item">
+            <h3 class="popup__item-title">Маникюр</h3>
+            <ul class="popup__service">
+              <li class="popup__next">
+                <span class="name-service popup__text">Классический</span>
+                <span class="price-service popup__text">600 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Необрезной</span>
+                <span class="price-service popup__text">400 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Комбинированный</span>
+                <span class="price-service popup__text">700 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Мужской</span>
+                <span class="price-service popup__text">800 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Ремонт 1-го ногтя шёлк</span>
+                <span class="price-service popup__text">150 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Ремонт 1-го ногтя акрил</span>
+                <span class="price-service popup__text">150 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Покрытие лаком</span>
+                <span class="price-service popup__text">200 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Покрытие лаком френич</span>
+                <span class="price-service popup__text">200 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Покрытие шеллак</span>
+                <span class="price-service popup__text">1000 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Покрытие шеллак френч</span>
+                <span class="price-service popup__text">1200 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Покрытие шеллак лунный</span>
+                <span class="price-service popup__text">1300 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Лечение ногтей</span>
+                <span class="price-service popup__text">500 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Дизайн краской</span>
+                <span class="price-service popup__text">От 50 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Дизайн слайд</span>
+                <span class="price-service popup__text">От 30 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Стразы шт.</span>
+                <span class="price-service popup__text">20 руб.</span>
+              </li>
+            </ul>
+          </li>
+          <li class="popup__item">
+            <h3 class="popup__item-title">Педикюр</h3>
+            <ul class="popup__service">
+              <li class="popup__next">
+                <span class="name-service popup__text">Классический</span>
+                <span class="price-service popup__text">1400 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Классический муж</span>
+                <span class="price-service popup__text">1600 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Комбинированный</span>
+                <span class="price-service popup__text">1100 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Удаление вросшего ногтя</span>
+                <span class="price-service popup__text">100 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Массаж ног</span>
+                <span class="price-service popup__text">200 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Доп.услуги</span>
+                <span class="price-service popup__text">300 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Удаление натоплтышей</span>
+                <span class="price-service popup__text">200 рубю</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Педикюр с покрытием шеллак</span>
+                <span class="price-service popup__text">2000 руб.</span>
+              </li>
+            </ul>
+          </li>
+          <li class="popup__item">
+            <h3 class="popup__item-title">Наращивание ногетей, гель, акрил</h3>
+            <ul class="popup__service">
+              <li class="popup__next">
+                <span class="name-service popup__text">Классический под лак (маникюр, дизайн)</span>
+                <span class="price-service popup__text">2500 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Френч (маникюр)</span>
+                <span class="price-service popup__text">2900 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Наращивание на формы (маникюр, дизайн)</span>
+                <span class="price-service popup__text">От 3000 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Укрепление ногтей гель</span>
+                <span class="price-service popup__text">1000 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Укрепление ногтей френч</span>
+                <span class="price-service popup__text">1500 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Укрепление ногтей акрил</span>
+                <span class="price-service popup__text">500 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Коррекция классическая (маникюр)</span>
+                <span class="price-service popup__text">1500 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Коррекция френч (маникюр)</span>
+                <span class="price-service popup__text">2000 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Снятие искусственных ногтей.</span>
+                <span class="price-service popup__text">500 руб.</span>
+              </li>
+              <li class="popup__next">
+                <span class="name-service popup__text">Снятие шеллак/гель-лак</span>
+                <span class="price-service popup__text">300 руб.</span>
+              </li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+  </div>
+  <div class="popup popup-wig">
+    <div class="popup__container">
+      <button class="popup-close"></button>
       <h2 class="title popup__title">Маникюр</h2>
       <ul class="popup__list">
           <li class="popup__item">

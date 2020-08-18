@@ -11,6 +11,26 @@ var nav = $('.navigation')
   btnburger.on('click', function () {
     nav.removeClass('active');
     });
+// Кнопка закрытия для всех попап
+var bClose = $('.popup-close')
+    popup = $('.popup')
+    bClose.on('click', function () {
+      popup.removeClass('popup--visible')
+    })
+//    
+//попап парикмахерский зал
+var bWig = $('.bWig')
+    pWig = $('.popup-wig')
+    bWig.on('click', function () {
+      pNails.toggleClass('popup--visible');
+    });
+
+// попап для ногтей 
+var bNails = $('.bNails')
+    pNails = $('.popup-nails')
+    bNails.on('click', function () {
+      pNails.toggleClass('popup--visible');
+    });
 
 var mySwiper = new Swiper('.hero .swiper-container', {
   // Optional parameters
