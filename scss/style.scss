@@ -135,17 +135,14 @@ button {
 .header__button {
   padding: 1em 3.444em;
 }
-.phone-box-img {
+.phone-img {
   display: inline-block;
-  width: 0.625px;
-  height: 0.625px;
+  width: 0.625em;
+  height: 0.625em;
   margin-right: 0.66666em;
   margin-top: 0.33em;
 }
-.phone-img {
-  width: 100%;
-  height: 100%;
-}
+
 .title {
   text-align: center;
   color: $dark;
@@ -421,7 +418,12 @@ button {
   padding: 1.2222em 3.1666em;
   border-radius: 5px;
 }
-
+.btnburger {
+  font-size: 1.5em;
+  color: $dark;
+  font-weight: 500;
+  border: none;
+}
 .consent {
   position: relative;
   font-weight: 300;
@@ -544,6 +546,7 @@ button {
       max-width: 9.1666em;
     }
     &-button {
+      text-decoration: none;
       position: relative;
       font-weight: 600;
       font-size: 1em;
@@ -913,7 +916,9 @@ display: none;
   padding: 0.8888em 5.5555em;
   box-shadow: 0 0 10px 0 $silver;
 }
-
+.price-service {
+  text-align: right;
+}
 .popup__list {
   display: flex;
   justify-content: space-between;
@@ -1023,7 +1028,22 @@ display: none;
   left: 0; }
   .navigation .button--silver {
     margin-top: 2rem;
-    padding: 1rem 2rem; }
+    padding: 1rem 2rem; 
+  }
+    .social-burger {
+      margin-top: 1em;
+      border-radius: 5px;
+      text-decoration: none;
+      display: block;
+      color: $comment;
+      border:1px solid $comment;
+      display: flex;
+      justify-content: center;
+      background: transparent;
+      font-size: 1.3em;
+      padding: 1em 0;
+      width: 50%;
+    }
   .navigation.active {
     opacity: 1;
     visibility: visible;
@@ -1139,7 +1159,17 @@ display: none;
     .bm   {
       display: none;
     }
+    @media (min-width: 1000px) {
+      .navigation {
+        display: none;
+      }
+    } 
     @media (max-width: 1000px) {
+      .popup__container {
+        
+        padding: 0.8888em 1.5555em;
+      }
+      
       .popup__list {
         flex-direction: column;
       }
@@ -1206,9 +1236,7 @@ display: none;
         font-size: 0.8em;
       }
       .gallery .swiper-slide {
-       
         height: 70%;
-       
     }
     
     }
@@ -1260,14 +1288,7 @@ display: none;
     .navigation__inner .menu__href  {
       font-size: 2em;
     }
-    .btnburger {
-      font-size: 1.5em;
-      color: $dark;
-      font-weight: 500;
-    }
-    .btnburger {
-      border: none;
-    }
+    
     
   }
   @media (max-width: 700px) {
