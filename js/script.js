@@ -16,7 +16,7 @@ var bClose = $('.popup-close')
     popup = $('.popup')
     bClose.on('click', function () {
       popup.removeClass('popup--visible')
-    })
+    });
 //    
 //попап парикмахерский зал
 var bWig = $('.bWig')
@@ -31,6 +31,33 @@ var bNails = $('.bNails')
     bNails.on('click', function () {
       pNails.toggleClass('popup--visible');
     });
+// попап для makeup
+var bMakeup = $('.bMakeup')
+    pMakeup = $('.popup-makeup')
+    bMakeup.on('click', function () {
+      pMakeup.toggleClass('popup--visible');
+    }); 
+    // попап для Mantrim
+var bMantrim = $('.bMantrim')
+pMantrim = $('.popup-mantrim')
+bMantrim.on('click', function () {
+  pMantrim.toggleClass('popup--visible');
+}); 
+
+// попап для procedures
+var bProcedures = $('.bProcedures')
+pProcedures = $('.popup-procedures')
+bProcedures.on('click', function () {
+  pProcedures.toggleClass('popup--visible');
+}); 
+
+// попап для procedures
+var bSolarium = $('.bSolarium')
+pSolarium = $('.popup-solarium')
+bSolarium.on('click', function () {
+  pSolarium.toggleClass('popup--visible');
+}); 
+
 
 var mySwiper = new Swiper('.hero .swiper-container', {
   // Optional parameters
@@ -105,7 +132,7 @@ function init () {
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: '../img/map-icon.png',
+            iconImageHref: '../img/map-ico.svg',
             // Размеры метки.
             iconImageSize: [30, 30],
             // Смещение левого верхнего угла иконки относительно

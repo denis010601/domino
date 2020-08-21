@@ -1213,13 +1213,13 @@ button:hover {
   display: none;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
   .navigation {
     display: none;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
   .popup__container {
     padding: 0.8888em 1.5555em;
   }
