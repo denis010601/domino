@@ -279,3 +279,53 @@ document.addEventListener ('DOMContentLoaded', function (){
     })
   }
 });
+
+
+
+$(".bid__form").validate({
+  errorElement: "div",
+  errorClass: "invalid",
+  rules: {
+    // simple rule, converted to {required:true}
+    userName: {
+      required: true,
+      minlength: 2,
+      maxlength:15
+    },
+    userPhone: {
+      required: true,
+      minlength: 17,
+    },
+    // compound rule
+
+    
+  },
+    messages: {
+      
+
+      userName: {
+        required:"Имя обязательно",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не длиньше 15 букв"
+      } ,
+      userPhone: {
+        required :"Телефон обязателен",
+        minlength: "Введите в формате +7(000) 000-00-00",
+      },
+
+    
+  },
+  submitHandler: function(form) {
+    $.ajax ({
+      type: "POST",
+      url: "send.php",
+      data: $(form).serialize(),
+      success: function (response) {
+        thank.toggleClass('thank--visible');
+        $(form)[0].reset();
+        modal.removeClass('modal--visible');
+      }
+    });
+  }
+});
+$('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "Телефон"}, {minLength: 11});

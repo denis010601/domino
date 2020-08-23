@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/swip.css">
   <title>ДОМИНО</title>
 </head>
 <body>
@@ -474,8 +474,8 @@
       <p class="subtitle bid__subtitle">Наш администратор перезвонит вам через несколько 
         минут</p>
         <form action="send.php" class="form bid__form">
-          <input class="bid__input" type="text" placeholder="Ваше имя">
-          <input class="bid__input" type="text" placeholder="Ваш номер телефона">
+          <input class="bid__input" name="userName" type="text" placeholder="Ваше имя">
+          <input class="bid__input" name="userPhone" type="tel" placeholder="Ваш номер телефона">
           <button class="form__button">Оставьте заявку</button>
         </form>
         <p class="consent">Нажимая на кнопку вы даете согласие на обработку персональных данных</p>
@@ -1657,8 +1657,6 @@
         <a href="https://vk.com/id456160867" class="social-burger">Вконтакте</a>
       </ul>
       <button class="button button--silver btnburger">Закрыть</button>
-
-
     </div>
   </div>
   <div class="modal ">
@@ -1674,9 +1672,10 @@
       </form>
     </div>
   </div>
-  
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/jq.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/swip.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
