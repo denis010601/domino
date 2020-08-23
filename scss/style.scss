@@ -84,6 +84,9 @@ button {
     &-link {
       text-decoration: none;
       color: $dark;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   &__phone {
@@ -437,8 +440,19 @@ button {
   padding-top: 7.2222em;
 }
 .gallery__title {
-  margin: 0;
+  max-width: 150px;
+  position: relative;
+  margin: 0 auto;
   margin-bottom: 0.9444em;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -0.33333em;
+    left: 0.2em;
+    width: 4.05555em;
+    height: 5px;
+    background: #434242;
+}
 }
 .gallery__subtitle {
   margin: 0 auto;
@@ -579,9 +593,20 @@ button {
   }
   
   &__title {
+    max-width: 150px;
+    position: relative;
     margin: 0 auto;
     margin-bottom: 0.5em;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -0.33333em;
+      left: 0;
+      width: 4.05555em;
+      height: 5px;
+      background: #434242;
   }
+}
   &__subtitle {
     margin: 0 auto;
     font-weight: 300;
@@ -706,7 +731,18 @@ display: none;
 .contact {
   background: $comment;
   &__title {
-    margin: 0 0 1.16em;
+    max-width: 200px;
+    position: relative;
+    margin: 0 auto 1.16em;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -0.33333em;
+      left: 0.5em;
+      width: 4.85555em;
+      height: 5px;
+      background: #434242;
+  }
   }
 }
 
@@ -822,6 +858,8 @@ display: none;
   }
 }
 .map-info {
+  display: flex;
+  flex-direction: column;
   width:  24em;
   height: 24em;
   position: absolute;
@@ -853,6 +891,11 @@ display: none;
   line-height: 1.6111em;
   text-decoration: none;
   color: $dark;
+}
+.phone {
+  &:hover {
+    text-decoration: underline;
+  }
 }
 .map__adress {
   font-size: 1.333em;
@@ -906,6 +949,7 @@ display: none;
   
 }
 .popup__container {
+  
   overflow-y: auto;
   height: 90vh;
   position: relative;
@@ -1418,4 +1462,74 @@ display: none;
   height: 1px;
   background:$dark;
   transform: rotate(-45deg);
+}
+.popup__button  {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+}
+.popup__box-btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgba($silver, .4);
+  &--visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  &__title {
+    color: $light;
+  }
+  &__dialog{
+    position: relative;
+    background:$dark;
+    border: none;
+    border-radius: 10px;
+    padding: 1.2em 1em;
+  }
+  &__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__consent {
+    color: $light;
+  }
+  &__input {
+    font-size: 1.6em;
+    padding: 20px 20px;
+    width: 80%;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .popup-close {
+    top: 1px;
+    right: 1px;
+    &:hover {
+      transform: rotate(0deg);
+    }
+  }
+  .popup-close::before, .popup-close::after {
+    background: $light;
+    
+  }
+  .form__button {
+    width: 80%;
+  }
 }

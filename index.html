@@ -16,24 +16,24 @@
         </a>
         <nav class="nav header__nav header__nav--margin-left">
         <ul class="list header__list">
-          <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Главная</a></li>
-          <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Услуги</a></li>
-          <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Галерея</a></li>
+          <li class="menu-item header__menu-item"><a href="index.html" class="header__menu-link">Главная</a></li>
+          <li class="menu-item header__menu-item"><a href="#services" class="header__menu-link">Услуги</a></li>
+          <li class="menu-item header__menu-item"><a href="gallery.html" class="header__menu-link">Галерея</a></li>
           <li class="menu-item header__menu-item"><a href="" class="header__menu-link">О компании</a></li>
-          <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Контакты</a></li>
+          <li class="menu-item header__menu-item"><a href="#contact" class="header__menu-link">Контакты</a></li>
         </ul>
         </nav>
         <div class="header__contact header__contact--margin-left">
-          <a href="" class="phone header__phone header__phone--margin-bottom">
+          <a href="tel:+74957523693" class="phone header__phone header__phone--margin-bottom">
             <img src="img/header/phone.svg" class="phone-img" alt="">+7 (495) 752-36-93</a>
-            <a href="" class="phone header__phone header__phone--margin-bottom">
+            <a href="tel:+79771433122" class="phone header__phone header__phone--margin-bottom">
               <img src="img/header/phone.svg" class="phone-img" alt="">+7 (977) 143-31-22</a>
           <span class="adress header__adress header__adress--margin-top">г.Москва, ул.Барышиха, д.44, корп. 1</span>
         </div>
         <div class="header__social-box">
           <a href="https://www.instagram.com/salon_domino_mitino/" class="social header__social"><img src="img/insta.svg" alt="" class="mobile-disabled  social-img"></a>
           <a href="https://vk.com/id456160867" class="social header__social"><img src="img/vk.svg" alt="" class="mobile-disabled  social-img"></a>
-          <button class="button header__button mobile-disabled button--primary">Записаться</button>
+          <button class="button header__button mobile-disabled button--primary js-modal">Записаться</button>
           <button id="show" class="bm button header__button button--primary" >МЕНЮ</button> 
         </div>
       </div>
@@ -87,7 +87,7 @@
       </div>
       </div>
     </section>
-    <section class="services">
+    <section id="services" class="services">
       <h2 class="title services__title">Услуги</h2>
       <ul class="services__list">
         <li class="services__item">
@@ -95,7 +95,7 @@
           <div class="services__interaction">
             <span class="services__name services__name--visible">Ногтевой сервис</span>
             <button class="button services__button button--interest services__button--visible bNails">Подробнее</button>
-            <button class="button services__button button--primary">Записаться</button>
+            <button class="button services__button button--primary js-modal">Записаться</button>
           </div>
           <div class="services__preview services__preview--visible">
             <h3 class="services__preview-title">Ногтевой сервис</h3>
@@ -153,7 +153,7 @@
           <div class="services__interaction">
             <span class="services__name services__name--visible">Парикмахерский зал</span>
             <button class="button services__button button--interest services__button--visible bWig">Подробнее</button>
-            <button class="button services__button button--primary">Записаться</button>
+            <button class="button services__button button--primary js-modal">Записаться</button>
           </div>
           <div class="services__preview services__preview--visible">
             <h3 class="services__preview-title">Парикмахерский зал</h3>
@@ -211,7 +211,7 @@
           <div class="services__interaction">
             <span class="services__name services__name--visible">Мужские стрижки</span>
             <button class="button services__button button--interest services__button--visible bMantrim">Подробнее</button>
-            <button class="button services__button button--primary">Записаться</button>
+            <button class="button services__button button--primary js-modal">Записаться</button>
           </div>
           <div class="services__preview services__preview--visible">
             <h3 class="services__preview-title">Мужские стрижки</h3>
@@ -269,7 +269,7 @@
           <div class="services__interaction">
             <span class="services__name services__name--visible">Макияж</span>
             <button class="button services__button button--interest services__button--visible bMakeup">Подробнее</button>
-            <button class="button services__button button--primary">Записаться</button>
+            <button class="button services__button button--primary js-modal">Записаться</button>
           </div>
           <div class="services__preview services__preview--visible">
             <h3 class="services__preview-title">Макияж</h3>
@@ -327,7 +327,7 @@
           <div class="services__interaction">
             <span class="services__name services__name--visible">СПА процедуры</span>
             <button class="button services__button button--interest services__button--visible bProcedures">Подробнее</button>
-            <button class="button services__button button--primary">Записаться</button>
+            <button class="button services__button button--primary js-modal">Записаться</button>
           </div>
           <div class="services__preview services__preview--visible">
             <h3 class="services__preview-title">СПА процедуры</h3>
@@ -385,7 +385,7 @@
           <div class="services__interaction">
             <span class="services__name services__name--visible">Солярий</span>
             <button class="button services__button button--interest services__button--visible bSolarium">Подробнее</button>
-            <button class="button services__button button--primary">Записаться</button>
+            <button class="button services__button button--primary js-modal">Записаться</button>
           </div>
           <div class="services__preview services__preview--visible">
             <h3 class="services__preview-title">Солярий</h3>
@@ -645,7 +645,7 @@
           </div>
         
       </section>
-      <section class="contact">
+      <section id="contact" class="contact">
           <h2 class="title contact__title">Контакты</h2>
           <div class="ymap-container">
           <div class="loader loader-default"></div>
@@ -655,9 +655,10 @@
             <h3 class="title map__title">
               Контакты студии красоты домино
             </h3>
-            <a href="" class="phone map__phone ">
-              <img src="img/header/phone.svg" class="map-img" alt="">+7 (925) 432-75-90
-            </a>
+            <a href="tel:+74957523693" class="phone map__phone">
+              <img src="img/header/phone.svg" class="phone-img" alt="">+7 (495) 752-36-93</a>
+              <a href="tel:+79771433122" class="phone map__phone">
+                <img src="img/header/phone.svg" class="phone-img" alt="">+7 (977) 143-31-22</a>
             <p class="map__adress">
               <img src="img/map-ico.svg" class="map-img" alt="">г.Москва, ул.Барышиха, д.44, корп. 1
             </p>
@@ -674,24 +675,24 @@
       </a>
       <nav class="nav header__nav header__nav--margin-left">
       <ul class="list header__list">
-        <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Главная</a></li>
-        <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Услуги</a></li>
+        <li class="menu-item header__menu-item"><a href="index.html" class="header__menu-link">Главная</a></li>
+        <li class="menu-item header__menu-item"><a href="#services" class="header__menu-link">Услуги</a></li>
         <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Галерея</a></li>
         <li class="menu-item header__menu-item"><a href="" class="header__menu-link">О компании</a></li>
-        <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Контакты</a></li>
+        <li class="menu-item header__menu-item"><a href="#contact" class="header__menu-link">Контакты</a></li>
       </ul>
       </nav>
       <div class="contact  header__contact header__contact--margin-left">
-        <a href="" class="phone header__phone header__phone--margin-bottom">
+        <a href="tel:+74957523693" class="phone header__phone header__phone--margin-bottom">
           <img src="img/header/phone.svg" class="phone-img" alt="">+7 (495) 752-36-93</a>
-          <a href="" class="phone header__phone header__phone--margin-bottom">
+          <a href="tel:+79771433122" class="phone header__phone header__phone--margin-bottom">
             <img src="img/header/phone.svg" class="phone-img" alt="">+7 (977) 143-31-22</a>
         <span class="adress header__adress header__adress--margin-top">г.Москва, ул.Барышиха, д.44, корп. 1</span>
       </div>
       <div class="header__social-box">
         <a href="https://www.instagram.com/salon_domino_mitino/" class="social header__social"><img src="img/insta.svg" alt="" class="mobile-disabled  social-img"></a>
         <a href="https://vk.com/id456160867" class="social header__social"><img src="img/vk.svg" alt="" class="mobile-disabled  social-img"></a>
-        <button class="button header__button button--primary">Записаться</button> 
+        <button class="button header__button button--primary js-modal ">Записаться</button> 
       </div>
     </div>
     </div>
@@ -699,7 +700,7 @@
   <div class="popup popup-nails">
     <div class="popup__container">
       <button class="popup-close"></button>
-      <h2 class="title popup__title">Парикмахерский зал</h2>
+      <h2 class="title popup__title">Ногтевой сервис</h2>
       <ul class="popup__list">
           <li class="popup__item">
             <h3 class="popup__item-title">Маникюр</h3>
@@ -849,6 +850,9 @@
             </ul>
           </li>
       </ul>
+      <div class="popup__box-btn">
+      <button class="button popup__button header__button button--primary js-modal">Записаться</button>
+      </div>
     </div>
   </div>
   <div class="popup popup-wig">
@@ -1004,6 +1008,9 @@
             </ul>
           </li>
       </ul>
+      <div class="popup__box-btn">
+        <button class="button popup__button header__button button--primary js-modal">Записаться</button>
+        </div>
     </div>
   </div>
   <div class="popup popup-mantrim">
@@ -1159,6 +1166,9 @@
             </ul>
           </li>
       </ul>
+      <div class="popup__box-btn">
+        <button class="button popup__button header__button button--primary js-modal">Записаться</button>
+        </div>
     </div>
   </div>
   <div class="popup popup-makeup">
@@ -1314,6 +1324,9 @@
             </ul>
           </li>
       </ul>
+      <div class="popup__box-btn">
+        <button class="button popup__button header__button button--primary js-modal">Записаться</button>
+        </div>
     </div>
   </div>
   <div class="popup popup-procedures">
@@ -1469,6 +1482,9 @@
             </ul>
           </li>
       </ul>
+      <div class="popup__box-btn">
+        <button class="button popup__button header__button button--primary js-modal">Записаться</button>
+        </div>
     </div>
   </div>
   <div class="popup popup-solarium">
@@ -1624,20 +1640,36 @@
             </ul>
           </li>
       </ul>
+      <div class="popup__box-btn">
+        <button class="button popup__button header__button button--primary js-modal">Записаться</button>
+        </div>
     </div>
   </div>
   <div id="nav" class="navigation">
     <div class="navigation__inner">
       <ul class="menu__ul">
-        <li class="menu__link"><a href="#" class="menu__href">Главная</a></li>
-        <li class="menu__link"><a href="#" class="menu__href">Услуги</a></li>
-        <li class="menu__link"><a href="#"  class="menu__href">Галерея</a></li>
+        <li class="menu__link"><a href="index.html" class="menu__href">Главная</a></li>
+        <li class="menu__link"><a href="#services" class="menu__href">Услуги</a></li>
+        <li class="menu__link"><a href="gallery.html"  class="menu__href">Галерея</a></li>
         <li class="menu__link"><a href="#"  class="menu__href">О компании</a></li>
-        <li class="menu__link"><a href="#"  class="menu__href">Контакты</a></li>
+        <li class="menu__link"><a href="#contact"  class="menu__href">Контакты</a></li>
         <a href="https://www.instagram.com/salon_domino_mitino/" class="social-burger">Инстаграмм</a>
         <a href="https://vk.com/id456160867" class="social-burger">Вконтакте</a>
       </ul>
       <button class="button button--silver btnburger">Закрыть</button>
+    </div>
+  </div>
+  <div class="modal ">
+    <div class="modal__dialog">
+      <button class="popup-close"></button>
+      <h2 class="title modal__title">Оставьте заявку</h2>
+      <form action="#" class="form modal__form">
+        <input class="modal__input" type="text" placeholder="Ваше имя">
+        <input class="modal__input" type="text" placeholder="Ваш номер телефона">
+        <button class="form__button">Отправить</button>
+        <p class="consent modal__consent">Нажимая на кнопку вы даете согласие на обработку персональных данных</p>
+      
+      </form>
     </div>
   </div>
   <script src="js/swip.js"></script>
