@@ -16,11 +16,11 @@
         </a>
         <nav class="nav header__nav header__nav--margin-left">
         <ul class="list header__list">
-          <li class="menu-item header__menu-item"><a href="index.html" class="header__menu-link">Главная</a></li>
-          <li class="menu-item header__menu-item"><a href="#services" class="header__menu-link">Услуги</a></li>
-          <li class="menu-item header__menu-item"><a href="gallery.html" class="header__menu-link">Галерея</a></li>
-          <li class="menu-item header__menu-item"><a href="" class="header__menu-link">О компании</a></li>
-          <li class="menu-item header__menu-item"><a href="#contact" class="header__menu-link">Контакты</a></li>
+          <li class="menu-item header__menu-item"><a href="index.html" class="header__menu-link js-header__menu-link">Главная</a></li>
+          <li class="menu-item header__menu-item"><a href="#services" class="header__menu-link js-header__menu-link">Услуги</a></li>
+          <li class="menu-item header__menu-item"><a href="/gallery.html" class="header__menu-link ">Галерея</a></li>
+          <li class="menu-item header__menu-item"><a href="" class="header__menu-link js-header__menu-link">О компании</a></li>
+          <li class="menu-item header__menu-item"><a href="#contact" class="header__menu-link js-header__menu-link">Контакты</a></li>
         </ul>
         </nav>
         <div class="header__contact header__contact--margin-left">
@@ -473,7 +473,7 @@
       <h2 class="title bid__title">Оставьте заявку</h2>
       <p class="subtitle bid__subtitle">Наш администратор перезвонит вам через несколько 
         минут</p>
-        <form action="#" class="form bid__form">
+        <form action="send.php" class="form bid__form">
           <input class="bid__input" type="text" placeholder="Ваше имя">
           <input class="bid__input" type="text" placeholder="Ваш номер телефона">
           <button class="form__button">Оставьте заявку</button>
@@ -675,11 +675,11 @@
       </a>
       <nav class="nav header__nav header__nav--margin-left">
       <ul class="list header__list">
-        <li class="menu-item header__menu-item"><a href="index.html" class="header__menu-link">Главная</a></li>
-        <li class="menu-item header__menu-item"><a href="#services" class="header__menu-link">Услуги</a></li>
-        <li class="menu-item header__menu-item"><a href="" class="header__menu-link">Галерея</a></li>
-        <li class="menu-item header__menu-item"><a href="" class="header__menu-link">О компании</a></li>
-        <li class="menu-item header__menu-item"><a href="#contact" class="header__menu-link">Контакты</a></li>
+        <li class="menu-item header__menu-item"><a href="index.html" class="header__menu-link js-header__menu-link">Главная</a></li>
+        <li class="menu-item header__menu-item"><a href="#services" class="header__menu-link js-header__menu-link">Услуги</a></li>
+        <li class="menu-item header__menu-item"><a href="/gallery.html" class="header__menu-link ">Галерея</a></li>
+        <li class="menu-item header__menu-item"><a href="" class="header__menu-link js-header__menu-link">О компании</a></li>
+        <li class="menu-item header__menu-item"><a href="#contact" class="header__menu-link js-header__menu-link">Контакты</a></li>
       </ul>
       </nav>
       <div class="contact  header__contact header__contact--margin-left">
@@ -1649,10 +1649,10 @@
     <div class="navigation__inner">
       <ul class="menu__ul">
         <li class="menu__link"><a href="index.html" class="menu__href">Главная</a></li>
-        <li class="menu__link"><a href="#services" class="menu__href">Услуги</a></li>
+        <li class="menu__link"><a href="#services" class="menu__href js-menu__href">Услуги</a></li>
         <li class="menu__link"><a href="gallery.html"  class="menu__href">Галерея</a></li>
         <li class="menu__link"><a href="#"  class="menu__href">О компании</a></li>
-        <li class="menu__link"><a href="#contact"  class="menu__href">Контакты</a></li>
+        <li class="menu__link"><a href="#contact"  class="menu__href js-menu__href">Контакты</a></li>
         <a href="https://www.instagram.com/salon_domino_mitino/" class="social-burger">Инстаграмм</a>
         <a href="https://vk.com/id456160867" class="social-burger">Вконтакте</a>
       </ul>
@@ -1665,7 +1665,7 @@
     <div class="modal__dialog">
       <button class="popup-close"></button>
       <h2 class="title modal__title">Оставьте заявку</h2>
-      <form action="#" class="form modal__form">
+      <form action="send.php" class="form modal__form">
         <input class="modal__input" type="text" placeholder="Ваше имя">
         <input class="modal__input" type="text" placeholder="Ваш номер телефона">
         <button class="form__button">Отправить</button>
@@ -1674,6 +1674,7 @@
       </form>
     </div>
   </div>
+  
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/jq.js"></script>
   <script src="js/script.js"></script>

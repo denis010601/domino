@@ -248,7 +248,7 @@ $(function() {
 
   
 document.addEventListener ('DOMContentLoaded', function (){
-  const links = document.querySelectorAll ('.header__menu-link' );
+  const links = document.querySelectorAll ('.js-header__menu-link' );
 
   for(let i = 0; i<links.length; i++){
     links[i].addEventListener('click', function (event) {
@@ -264,7 +264,7 @@ document.addEventListener ('DOMContentLoaded', function (){
   }
 });
 document.addEventListener ('DOMContentLoaded', function (){
-  const links = document.querySelectorAll ('.menu__href' );
+  const links = document.querySelectorAll ('.js-menu__href' );
 
   for(let i = 0; i<links.length; i++){
     links[i].addEventListener('click', function (event) {
