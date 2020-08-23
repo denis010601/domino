@@ -11,11 +11,20 @@ var nav = $('.navigation')
   btnburger.on('click', function () {
     nav.removeClass('active');
     });
+var modal = $('.modal')
+    jsbtn = $('.js-modal')
+    jsbtn.on('click', function () {
+      modal.toggleClass('modal--visible')
+    })
 // Кнопка закрытия для всех попап
 var bClose = $('.popup-close')
     popup = $('.popup')
+    modal = $('.modal')
     bClose.on('click', function () {
       popup.removeClass('popup--visible')
+    });
+    bClose.on('click', function () {
+      modal.removeClass('modal--visible')
     });
 //    
 //попап парикмахерский зал
@@ -132,7 +141,7 @@ function init () {
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: '../img/map-ico.svg',
+            iconImageHref: '../img/map-icon.png',
             // Размеры метки.
             iconImageSize: [30, 30],
             // Смещение левого верхнего угла иконки относительно
@@ -233,4 +242,40 @@ $(function() {
   //Запускаем основную функцию
   ymap();
 
+});
+
+
+
+  
+document.addEventListener ('DOMContentLoaded', function (){
+  const links = document.querySelectorAll ('.header__menu-link' );
+
+  for(let i = 0; i<links.length; i++){
+    links[i].addEventListener('click', function (event) {
+      event.preventDefault();
+      
+      const blockID = event.target.getAttribute("href").substr(1);
+
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: "start"
+      })
+    })
+  }
+});
+document.addEventListener ('DOMContentLoaded', function (){
+  const links = document.querySelectorAll ('.menu__href' );
+
+  for(let i = 0; i<links.length; i++){
+    links[i].addEventListener('click', function (event) {
+      event.preventDefault();
+      
+      const blockID = event.target.getAttribute("href").substr(1);
+
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: "start"
+      })
+    })
+  }
 });
