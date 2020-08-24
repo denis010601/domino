@@ -1,3 +1,8 @@
+
+var thank = $('.thank')
+    thank.on('click', function (){
+      thank.removeClass('thank--visible')
+    })
 var nav = $('.navigation')
   btn = $('.bm');
   link = $('.menu__href')
@@ -141,12 +146,13 @@ function init () {
             // Необходимо указать данный тип макета.
             iconLayout: 'default#image',
             // Своё изображение иконки метки.
-            iconImageHref: '../img/map-icon.png',
+            iconImageHref: 'img/map-icon.png',
             // Размеры метки.
             iconImageSize: [30, 30],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
-            iconImageOffset: [-15, -20]
+            iconImageOffset: [-15, -20],
+            
   });
   
   myMapTemp.geoObjects.add(myPlacemarkTemp); // помещаем флажок на карту
@@ -281,6 +287,51 @@ document.addEventListener ('DOMContentLoaded', function (){
 });
 
 
+$(".modal__form").validate({
+  errorElement: "div",
+  errorClass: "invalid",
+  rules: {
+    // simple rule, converted to {required:true}
+    userName: {
+      required: true,
+      minlength: 2,
+      maxlength:15
+    },
+    userPhone: {
+      required: true,
+      minlength: 17,
+    },
+    // compound rule
+
+    
+  },
+    messages: {
+      userName: {
+        required:"Имя обязательно",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не длиньше 15 букв"
+      } ,
+      userPhone: {
+        required :"Телефон обязателен",
+        minlength: "Введите в формате +7(000) 000-00-00",
+      },
+
+      
+  },
+  submitHandler: function(form) {
+    $.ajax ({
+      type: "POST",
+      url: "send.php",
+      data: $(form).serialize(),
+      success: function (response) {
+        thank.toggleClass('thank--visible');
+        $(form)[0].reset();
+        modal.removeClass('modal--visible');
+      }
+    });
+  }
+});
+$('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "Телефон"}, {minLength: 11});
 
 $(".bid__form").validate({
   errorElement: "div",
@@ -301,8 +352,6 @@ $(".bid__form").validate({
     
   },
     messages: {
-      
-
       userName: {
         required:"Имя обязательно",
         minlength: "Имя не короче двух букв",
@@ -313,7 +362,7 @@ $(".bid__form").validate({
         minlength: "Введите в формате +7(000) 000-00-00",
       },
 
-    
+
   },
   submitHandler: function(form) {
     $.ajax ({

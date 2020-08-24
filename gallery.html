@@ -282,21 +282,26 @@
 
     </div>
   </div>
-  <div class="modal ">
+  <div class="modal">
     <div class="modal__dialog">
       <button class="popup-close"></button>
       <h2 class="title modal__title">Оставьте заявку</h2>
-      <form action="#" class="form modal__form">
-        <input class="modal__input" type="text" placeholder="Ваше имя">
-        <input class="modal__input" type="text" placeholder="Ваш номер телефона">
-        <button class="form__button">Отправить</button>
+      <form action="send.php" class="form modal__form">
+        <div class="modal__input-box">
+          <input class="modal__input" name="userName" type="text" placeholder="Ваше имя">
+        </div>
+        <div class="modal__input-box">
+          <input class="modal__input" name="userPhone" type="tel" placeholder="Ваш номер телефона">
+        </div>
+        <button class="modal__button">Отправить</button>
         <p class="consent modal__consent">Нажимая на кнопку вы даете согласие на обработку персональных данных</p>
-      
       </form>
     </div>
   </div>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/jq.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/swip.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

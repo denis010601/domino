@@ -474,8 +474,12 @@
       <p class="subtitle bid__subtitle">Наш администратор перезвонит вам через несколько 
         минут</p>
         <form action="send.php" class="form bid__form">
-          <input class="bid__input" name="userName" type="text" placeholder="Ваше имя">
-          <input class="bid__input" name="userPhone" type="tel" placeholder="Ваш номер телефона">
+          <div class="bid__input-box">
+            <input class="bid__input" name="userName" type="text" placeholder="Ваше имя">
+          </div>
+          <div class="bid__input-box">
+            <input class="bid__input" name="userPhone" type="tel" placeholder="Ваш номер телефона">
+          </div>
           <button class="form__button">Оставьте заявку</button>
         </form>
         <p class="consent">Нажимая на кнопку вы даете согласие на обработку персональных данных</p>
@@ -662,7 +666,7 @@
             <p class="map__adress">
               <img src="img/map-ico.svg" class="map-img" alt="">г.Москва, ул.Барышиха, д.44, корп. 1
             </p>
-            <button class="button header__button button--primary">Записаться</button>
+            <button class="button header__button button--primary js-modal">Записаться</button>
             </div>
           </div>
       </section>
@@ -1664,12 +1668,22 @@
       <button class="popup-close"></button>
       <h2 class="title modal__title">Оставьте заявку</h2>
       <form action="send.php" class="form modal__form">
-        <input class="modal__input" type="text" placeholder="Ваше имя">
-        <input class="modal__input" type="text" placeholder="Ваш номер телефона">
-        <button class="form__button">Отправить</button>
+        <div class="modal__input-box">
+          <input class="modal__input" name="userName" type="text" placeholder="Ваше имя">
+        </div>
+        <div class="modal__input-box">
+          <input class="modal__input" name="userPhone" type="tel" placeholder="Ваш номер телефона">
+        </div>
+        <button class="modal__button">Отправить</button>
         <p class="consent modal__consent">Нажимая на кнопку вы даете согласие на обработку персональных данных</p>
-      
       </form>
+    </div>
+  </div>
+  <div class="thank">
+    <div class="thank__dialog">
+      <p class="thank-info">
+        Свяжемся в течении 15 минут
+      </p>
     </div>
   </div>
   <script src="js/jq.js"></script>
